@@ -1,11 +1,40 @@
 <%= provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h2>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h2>
-    </section>
-  </aside>
-</div>
+
+<%= content_for :dashboard_sidebar do %>
+
+      <div class="background_sidebar col-xs-12 col-sm-4 col-md-3">
+        <div class="welcome_sidebar">
+          <%= link_to "Notulu", root_path, id:"logo" %>
+          <ul class="welcome_sidebar">
+            <li><%= link_to "Write", signup_path, class:'button button_highlight' %></li>
+            <li><%= link_to "Log out", root_path, id:"signin"%></li>
+          </ul>
+        </div>
+    </div>
+
+<% end %>
+
+<%= content_for :content do %>
+
+
+        <aside id="user_profile">
+          <section class="user_info">
+            <h2>
+              <%= gravatar_for @user %>
+              <%= @user.name %>
+            </h2>
+          </section>
+        </aside>
+
+    <div id="content" class="col-xs-12 col-sm-12 col-md-12">
+    <div class="post">
+        <p class="date">23 Sept. 2015</p>
+        <h1 id="post_title"><a href="post.html">cronut lumbersexualk</a></h1>
+        <p> Truffaut kogi craft beer kitsch. Organic artisan
+          freegan, wayfarerscraft beercraft eercraft...
+        </p>
+        <hr>
+      </div>
+    </div>
+
+<% end %>

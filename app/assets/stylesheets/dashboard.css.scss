@@ -3,8 +3,8 @@
   height: 100vh;
   text-align: center;
   background-image: image-url("note_cover.jpg");
+  background-size: cover;
   position: fixed;
-
 
   .welcome_sidebar {
     margin-top: 20%;
@@ -38,10 +38,19 @@
   }
 }
 
-#content {
-  margin-left: 25%;
+aside{
+  padding-left: 2.5%;
+  margin: 0 25%;
+  width: 75%;
   float: left;
-  height: 100%;
+  text-align: center;
+}
+
+#content {
+  padding-left: 2.5%;
+  margin: 0 25%;
+  width: 75%;
+  float: left;
   text-align: center;
   .post {
     padding-top: 8.5%;

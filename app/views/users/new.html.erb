@@ -8,6 +8,7 @@
 <body class="body">
 
 <%= content_for :home_sidebar do %>
+    <div id="sidebar" class="col-xs-12 col-sm-4 col-md-3">
     <nav>
       <%= link_to "Notulu", root_path, id:"logo" %>
       <ul>
@@ -15,6 +16,7 @@
         <li><%= link_to "Log in", login_path, id:"signin"%></li>
       </ul>
     </nav>
+    </div>
 <% end %>
 
     <h2 class="slogan3"> Create an acount  </h2>
