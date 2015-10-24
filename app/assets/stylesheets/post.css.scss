@@ -1,0 +1,140 @@
+#pagination_button {
+  width: 85%;
+  a{
+    color: $black;
+    &:hover {
+      color: $highlight;
+      transition: color .3s ease-in-out;
+      font-weight:700;
+    }
+  }
+  i {
+    margin: 40% 0 0 15%;
+    font-size: 5rem;
+  }
+}
+#pagination {
+  width: 100%;
+  .previous {
+    float:left;
+    margin: 0 0 0 35%;
+  }
+  .next {
+    float:left;
+    margin: 0 0 0 9.5%;
+  }
+}
+
+#article {
+  margin-left: 25%;
+  float: left;
+  .post {
+    .banner {
+      width: 100%;
+    }
+
+    .date {
+      text-align: center;
+      padding-top: 1%;
+      font-size: 1.5rem;
+      font-weight:700;
+      color: $grey;
+    }
+
+    .content {
+      width: 75%;
+      margin: 0% 12.5%;
+      #post_title {
+        text-align: center;
+        color: $highlight;
+        font-size: 5rem;
+        text-decoration: none;
+        font-weight:700;
+        margin: -2% 0 0 0;
+      }
+      hr {
+        margin: 3.5% 0 3.5% 0;
+      }
+      h1, h2, h3, h4, h5, h6, p, ul, li {
+        color: $dark;
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 2.75rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.75rem;
+      }
+
+      h5 {
+        font-size: 1.375rem;
+      }
+
+      h6 {
+        font-size: 1.2rem;
+      }
+
+      p, li {
+        font-size: 1.75rem;
+        line-height: 2;
+      }
+
+      p, ul, ol {
+        margin: 0 0 1.6em 0;
+      }
+
+      .image {
+        width: 95%;
+        margin: 2.5% 0 2.5% 0;
+
+      }
+
+    }
+  }
+
+  hr {
+    margin-top: 5%;
+  }
+  #share_box{
+    width: 100%;
+    padding: 0% 0 5% 35%;
+    margin: 2.5% 0 7.5% 0;
+    p {
+      float: left;
+      padding: 2em 0 0em 0;
+      margin: 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $dark;
+      font-size: 1.2rem;
+      margin-right: 1em;
+
+    }
+    i {
+      margin-left: 0.5em;
+      float:left;
+      color: $dark;
+      padding: 1.6em 1.5em 0em;
+      font-size: 1.5rem;
+
+      &:hover {
+        cursor: pointer;
+        color: $highlight;
+        transition: color .3s ease-in-out;
+        font-weight:700;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,73 @@
+.background_sidebar {
+  float: left;
+  height: 100vh;
+  text-align: center;
+  background-image: image-url("note_cover.jpg");
+  position: fixed;
+
+
+  .welcome_sidebar {
+    margin-top: 20%;
+    #logo {
+      text-decoration: none;
+      color: $black;
+      font-weight:700;
+      font-size: 50px;
+    }
+    ul {
+      margin-top: 25%;
+      list-style: none;
+      float: left;
+      width: 100%;
+      li {
+        margin-right:4rem;
+        margin-top: 20%;
+        a{
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: $black;
+          &:hover {
+            color: $highlight;
+            transition: color .3s ease-in-out;
+            font-weight:700;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+#content {
+  margin-left: 25%;
+  float: left;
+  height: 100%;
+  text-align: center;
+  .post {
+    padding-top: 8.5%;
+    .date{
+      font-size: 2rem;
+      color: $grey;
+    }
+    h1 a {
+      color: $black;
+      font-size: 5rem;
+      text-decoration: none;
+      &:hover {
+        color: $highlight;
+        transition: color .3s ease-in-out;
+        font-weight:700;
+      }
+    }
+    p {
+      font-size: 3rem;
+      width: 60%;
+      margin: 0% 20%;
+    }
+
+    hr {
+      margin-top: 7.5%;
+    }
+
+  }
+}

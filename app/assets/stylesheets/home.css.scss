@@ -1,0 +1,85 @@
+#sidebar {
+  float: left;
+  background: $light;
+  height: 100vh;
+  text-align: center;
+  nav {
+    margin-top: 20%;
+    #logo {
+      text-decoration: none;
+      color: $black;
+      font-weight:700;
+      font-size: 50px;
+    }
+    ul {
+      margin-top: 25%;
+      list-style: none;
+      float: left;
+      width: 100%;
+      li {
+        margin-right:4rem;
+        margin-top: 10%;
+        a{
+          font-size: 1.4rem;
+          text-decoration: none;
+          color: $black;
+          &:hover {
+            color: $highlight;
+            transition: color .3s ease-in-out;
+            font-weight:700;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+#background {
+  height:100vh;
+  background-image: image-url("18.jpg");
+  background-size: cover;
+  background-position: center;
+  float: left;
+  h1 {
+    float:left;
+    margin: 3.5% 50% 10% 30%;
+    padding-top: 20% 0;
+    color: $white;
+    font-weight: 700;
+    font-size: 10rem;
+    text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
+  }
+}
+
+/* signin & register page
+------------------------- */
+
+.actions {
+  padding: 7.5% 0 0 4%;
+  a{
+    text-decoration: none;
+    padding-right: 5%;
+    color: $black;
+    &:hover {
+      color: $light;
+      font-weight: 700;
+
+    }
+  }
+}
+
+.signin_form {
+  padding: 2.5% 0 0 37.5%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+

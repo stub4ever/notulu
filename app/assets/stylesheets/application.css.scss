@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import 'normalize';
+@import 'bootstrap';
+
+$black: #1B1818;
+$highlight: #fdcb00;
+$dark: #74726b;
+$light: #fff7d6;
+$white: #FFFFFF;
+$green: #00D06D;
+$grey: #888888;
+$dark: #333333;
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1rem;
+    border: 1px solid $black;
+    border-radius: 2rem;
+    padding: 0.8rem 3rem;
+}
+
+.button_highlight {
+&:hover {
+     color: $highlight;
+     transition: color .3s ease-in-out;
+ }
+}
+.button_green {
+    background: $green;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    color: $white;
+    font-weight:700;
+    border: 1px solid darken($green, 1%);
+&:hover {
+     transition: color .3s ease-in-out;
+     color: $light;
+ }
+}
+
+.slogan {
+    padding: 0.5% 0 0 20%;
+    float:left;
+    color: $white;
+    font-weight: 700;
+    font-size: 6rem;
+    text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
+}
+
+/*  Form
+----------------------- */
+
+form {
+    padding: 3.7% 0 0 20%;
+    width: 80%;
+    height: 100%;
+}
+
+.field {
+    margin: 2rem 0 2rem 0;
+label {
+    color: $light;
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+}
+
+
+input[type="email"], input[type="text"], input[type="password"], textarea {
+    width: 80%;
+    height: 3.5rem;
+    background: $white;
+    border: 1px solid darken($white, 5%);
+    border-radius: .7rem;
+    margin-top: .10rem;
+    font-weight:700;
+    padding-left: 1rem;
+}
+
+
+
+
+/*  Media Quiers Responsive
+----------------------- */
+
+
+@media only screen and (min-width: 150px) and (max-width: 750px){ /* Mobile */
+
+    .body {
+        width: 100%;
+    }
+
+    #background{
+        display: none;
+    }
+
+}
+
+
+@import 'home';
+@import 'dashboard';
+@import 'post';
