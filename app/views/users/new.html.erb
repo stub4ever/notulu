@@ -1,0 +1,62 @@
+<%= provide(:title, "Register") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body class="body">
+
+
+<div id="container" class="row">
+
+  <div id="sidebar" class="col-xs-12 col-sm-4 col-md-3">
+    <nav>
+      <%= link_to "Notulu", root_path, id:"logo" %>
+      <ul>
+        <li><%= link_to "Create account", "", class:"button button_highlight"%></li>
+        <li><%= link_to "Sign in", "", id:"signin"%></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="background" class="col-xs-12 col-sm-8 col-md-9">
+    <form>
+      <div class="row">
+        <div class="field col-md-6">
+          <label>Name</label><br>
+          <input type="text"/>
+        </div>
+
+        <div class="field col-md-6">
+          <label>Email adress</label><br>
+          <input type="email"/>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="field col-md-6">
+          <label>Enter password</label><br>
+          <input type="password"/>
+        </div>
+
+        <div class="field col-md-6">
+          <label>Confirm password</label><br>
+          <input type="password"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="actions col-md-6">
+          <a href="index.html">cancel</a>
+          <input type="submit" class="button_green">
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
