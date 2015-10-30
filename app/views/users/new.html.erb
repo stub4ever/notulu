@@ -21,39 +21,39 @@
   </div>
 
   <div id="background" class="col-xs-12 col-sm-8 col-md-9">
-    <form>
-      <div class="row">
-        <div class="field col-md-6">
-          <label>Name</label><br>
-          <input type="text"/>
-        </div>
+    <%= form_for(@user) do |f| %>
+        <div class="row">
+            <div class="field col-md-6">
+              <%= f.label :name %> <br>
+              <%= f.text_field :name %>
+            </div>
 
-        <div class="field col-md-6">
-          <label>Email adress</label><br>
-          <input type="email"/>
-        </div>
+            <div class="field col-md-6">
+              <%= f.label :email %> <br>
+              <%= f.email_field :email %>
+            </div>
 
-      </div>
+          </div>
 
-      <div class="row">
-        <div class="field col-md-6">
-          <label>Enter password</label><br>
-          <input type="password"/>
-        </div>
+          <div class="row">
+            <div class="field col-md-6">
+              <%= f.label :password %>
+              <%= f.password_field :password %>
+            </div>
 
-        <div class="field col-md-6">
-          <label>Confirm password</label><br>
-          <input type="password"/>
-        </div>
-      </div>
+            <div class="field col-md-6">
+              <%= f.label :password_confirmation, "Password confirmation"%>
+              <%= f.password_field :password_confirmation %>
+            </div>
+          </div>
 
-      <div class="row">
-        <div class="actions col-md-6">
-          <a href="index.html">cancel</a>
-          <input type="submit" class="button_green">
-        </div>
-      </div>
-    </form>
+          <div class="row">
+            <div class="actions col-md-6">
+              <%= link_to "Cancel", root_path %>
+              <%= f.submit "Submit", class: "button_green" %>
+            </div>
+          </div>
+    <% end %>
   </div>
 
 </div>

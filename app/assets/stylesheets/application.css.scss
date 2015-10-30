@@ -13,12 +13,24 @@ $grey: #888888;
 $dark: #333333;
 
 /* apply a natural box layout model to all elements, but allowing components to change */
+
+
 html {
     box-sizing: border-box;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+
+/*  Mixins, variables, etc.
+----------------------- */
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -114,6 +126,18 @@ input[type="email"], input[type="text"], input[type="password"], textarea {
         display: none;
     }
 
+}
+
+
+/*  Miscellaneous
+----------------------- */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing; /* Allows to a group of CSS rules to be packaged up and used for multiple elements & converting */
 }
 
 
