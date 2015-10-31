@@ -18,6 +18,10 @@
 
   <div id="bg-img1" class="background col-xs-12 col-sm-8 col-md-9">
 
+    <% flash.each do |message_type, message| %> <!-- Adding the contents of the flash variable to the site layout  -->
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
+
     <%= yield %>
 
   </div>
