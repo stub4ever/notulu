@@ -1,15 +1,6 @@
 <%= provide(:title, "Home") %>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-</head>
-<body class="body">
 
-
-<div id="container" class="row">
-
-
-  <div id="sidebar" class="col-xs-12 col-sm-4 col-md-3">
+<%= content_for :home_sidebar do %>
     <nav>
       <%= link_to "Notulu", root_path, id:"logo" %>
       <ul>
@@ -17,13 +8,7 @@
         <li><%= link_to "Sign in", "", id:"signin"%></li>
       </ul>
     </nav>
-  </div>
+<% end %>
 
-  <div id="background" class="col-xs-12 col-sm-8 col-md-9">
     <h1>Personal Creative Work</h1>
-  </div>
 
-</div>
-
-</body>
-</html>

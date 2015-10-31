@@ -36,9 +36,8 @@
 }
 
 
-#background {
+.background {
   height:100vh;
-  background-image: image-url("18.jpg");
   background-size: cover;
   background-position: center;
   float: left;
@@ -52,6 +51,10 @@
     text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
   }
 }
+#bg-img1 {
+  background-image: image-url("18.jpg");
+}
+
 
 /* signin & register page
 ------------------------- */
