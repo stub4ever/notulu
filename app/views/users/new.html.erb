@@ -8,19 +8,19 @@
 <body class="body">
 
 <%= content_for :home_sidebar do %>
-
     <nav>
       <%= link_to "Notulu", root_path, id:"logo" %>
       <ul>
         <li><%= link_to "Create account", signup_path, class:'button button_highlight' %></li>
-        <li><%= link_to "Sign in", "", id:"signin"%></li>
+        <li><%= link_to "Log in", login_path, id:"signin"%></li>
       </ul>
     </nav>
-
 <% end %>
 
+    <h2 class="slogan3"> Create an acount  </h2>
 
-    <%= form_for(@user) do |f| %>
+
+<%= form_for(@user) do |f| %>
         <%= render 'shared/error_messages' %>
 
         <div class="row">

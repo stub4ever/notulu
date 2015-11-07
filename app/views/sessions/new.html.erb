@@ -1,0 +1,42 @@
+<%= provide(:title, "Log in") %>
+
+<%= content_for :home_sidebar do %>
+
+    <nav>
+      <%= link_to "Notulu", root_path, id:"logo" %>
+      <ul>
+        <li><%= link_to "Create account", signup_path, class:'button button_highlight' %></li>
+        <li><%= link_to "Log in", login_path, id:"signin"%></li>
+      </ul>
+    </nav>
+
+<% end %>
+
+<div id="background" class="col-xs-12 col-sm-8 col-md-9">
+  <h2 class="slogan2"> Login  </h2>
+
+  <form class="signin_form">
+    <%= form_for(:session, url: login_path) do |f| %>
+    <div class="row">
+      <div class="field col-md-10">
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field col-md-10">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="actions ">
+        <%= link_to "cancel", root_path%>
+        <%= f.submit "Submit", class: "button_green" %>
+      </div>
+    </div>
+    <% end %>
+  </form>
+</div>

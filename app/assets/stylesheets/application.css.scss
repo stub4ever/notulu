@@ -59,7 +59,7 @@ body {
 }
 .button_green {
     background: $green;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 4rem;
     border-radius: 2rem;
     color: $white;
     font-weight:700;
@@ -70,14 +70,6 @@ body {
  }
 }
 
-.slogan {
-    padding: 0.5% 0 0 20%;
-    float:left;
-    color: $white;
-    font-weight: 700;
-    font-size: 6rem;
-    text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
-}
 
 /*  Form
 ----------------------- */

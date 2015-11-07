@@ -55,6 +55,39 @@
   background-image: image-url("18.jpg");
 }
 
+.slogan { // home page
+  padding: 0.5% 0 0 20%;
+  float:left;
+  color: $white;
+  font-weight: 700;
+  font-size: 6rem;
+  text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
+}
+
+.slogan2 { // login page
+  padding: 5.5% 0 5.5% 50%;
+  width: 100%;
+  float:left;
+  color: $white;
+  font-weight: 700;
+  font-size: 6rem;
+  text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
+}
+
+
+.slogan3 { // register page
+  padding: 4.5% 0 4.5% 19%;
+  margin-right: 25%;
+  width: 100%;
+  float:left;
+  color: $white;
+  font-weight: 700;
+  font-size: 6rem;
+  text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
+}
+
+
+
 
 /* signin & register page
 ------------------------- */
@@ -77,11 +110,9 @@ form {
 }
 
 .signin_form {
-  padding: 2.5% 0 0 37.5%;
-  width: 100%;
+  padding: 2.5% 0 0 50%;
+  width: 110%;
 }
-
-
 
 
 
