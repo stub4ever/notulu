@@ -95,8 +95,31 @@ form {
   padding-top: 12.5%;
 }
 
-.actions {
-  padding: 7.5% 0 0 4%;
+.actions_signup {
+  padding: 5.5% 0 0 41.5%;
+}
+
+.actions_login {
+  padding: 5.5% 0 0 10.5%;
+}
+
+.actions { //register page > action button
+  width: 100%;
+  a{
+    text-decoration: none;
+    padding-right: 5%;
+    color: $black;
+    &:hover {
+      color: $light;
+      font-weight: 700;
+
+    }
+  }
+}
+
+.actions2 { //login page > action button
+  padding: 5.5% 0 0 41.5%;
+  width: 100%;
   a{
     text-decoration: none;
     padding-right: 5%;
