@@ -105,7 +105,9 @@ form {
 
 .actions { //register page > action button
   width: 100%;
+  float: left;
   a{
+    font-size: 0.9em;
     text-decoration: none;
     padding-right: 5%;
     color: $black;
@@ -114,6 +116,11 @@ form {
       font-weight: 700;
 
     }
+  }
+  p {
+    font-size: 1.25em;
+    color: $green;
+    padding: 0 0 1em 0em;
   }
 }
 
