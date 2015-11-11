@@ -4,10 +4,17 @@
 
       <div class="background_sidebar col-xs-12 col-sm-4 col-md-3">
         <div class="welcome_sidebar">
-          <%= link_to "Notulu", root_path, id:"logo" %>
+          <%= link_to "Notulu", current_user, id:"logo" %>
           <ul class="welcome_sidebar">
-            <li><%= link_to "Write", signup_path, class:'button button_highlight' %></li>
-            <li><%= link_to "Log out", root_path, id:"signin"%></li>
+            <% if logged_in? %>
+                <li><%= link_to "Profile", current_user %></li>
+                <li><%= link_to "Settings", '#' %></li>
+                <li><%= link_to "Write", signup_path, class:'button button_highlight' %></li>
+                <li><%= link_to "Log out", logout_path, method: "delete", id:"signin" %></li>
+            <% else %>
+                <li><%= link_to "Log in", login_path %></li>
+            <% end %>
+
           </ul>
         </div>
     </div>
@@ -22,6 +29,7 @@
             <h2>
               <%= gravatar_for @user %>
               <%= @user.name %>
+
             </h2>
           </section>
         </aside>

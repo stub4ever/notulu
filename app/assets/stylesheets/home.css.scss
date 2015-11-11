@@ -85,16 +85,13 @@
   text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
 }
 
-
-
-
 /* signin & register page
 ------------------------- */
 
 
 #signin_wrap {
   padding-left: 30%;
-  width:130%;
+  width:137.5%;
 }
 
 
@@ -126,6 +123,24 @@
     padding: 0 0 1em 0em;
   }
 }
+
+/* Remember me checkbox (forms) - /sessions/new.html.erb  */
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10xp;
+  margin: 0 auto;
+  span{
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
 
 
 
