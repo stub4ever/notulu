@@ -6,7 +6,6 @@
   background-size: cover;
   position: fixed;
   margin: 0 auto;
-  margin-left: -15px;
 
   .welcome_sidebar {
     margin-top: 20%;
@@ -42,20 +41,21 @@
 
 aside{
   padding-left: 2.5%;
-  margin: 0 25%;
-  width: 75%;
+  margin: 2% 2.5%;
+  width: 95%;
   float: left;
   text-align: center;
+  border: 1px solid $black;
 }
 
 #content {
   padding-left: 2.5%;
-  margin: 0 25%;
-  width: 75%;
+  margin: 0 2.5%;
+  width: 95%;
   float: left;
   text-align: center;
   .post {
-    padding-top: 8.5%;
+    padding-top: 5%;
     .date{
       font-size: 2rem;
       color: $grey;
@@ -84,20 +84,20 @@ aside{
 }
 
 #wrap_setting {
-  width: 75%;
+  width: 100%;
   float: left;
-  margin:6.5% 0 0 54%;
+  margin:6.5% 0 0 0%;
+  padding-left: 23.5%;
 }
 
 #form_setting {
   width: 100%;
   float: left;
-  margin:0 0 0 34.5%;
-  padding-left: 0px;
+  padding-left: 7.5%;
 }
 
 .form_setting {
-  padding-left: 10%;
+  padding-left: 7.5%;
   input[type="email"], input[type="text"], input[type="password"], textarea {
     width: 100%;
     height: 3.5rem;
@@ -113,3 +113,20 @@ aside{
   float: left;
 }
 
+/* Users index */
+
+#wrap_discover {
+  width: 75%;
+  float: left;
+  margin:6.5% 0 3% 17.5%;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}

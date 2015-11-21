@@ -7,6 +7,7 @@
           <%= link_to "Notulu", current_user, id:"logo" %>
           <ul class="welcome_sidebar">
             <% if logged_in? %>
+                <li><%= link_to "Discover", users_path %></li>
                 <li><%= link_to "My Profile", current_user %></li>
                 <li><%= link_to "Settings", edit_user_path(current_user) %></li>
                 <li><%= link_to "Write", signup_path, class:'button button_highlight' %></li>
@@ -20,9 +21,6 @@
     </div>
 
 <% end %>
-
-<%= content_for :content do %>
-
 
         <aside id="user_profile">
           <section class="user_info">
@@ -45,4 +43,3 @@
       </div>
     </div>
 
-<% end %>

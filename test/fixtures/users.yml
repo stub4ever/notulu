@@ -6,3 +6,8 @@ quoc:
   name: Quoc Example
   email: quoc@example.com
   password_digest: <%= User.digest('password') %>
+
+an:
+  name: An Bui
+  email: an@example.gov
+  password_digest: <%= User.digest('password') %>

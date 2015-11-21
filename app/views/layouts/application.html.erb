@@ -15,10 +15,7 @@
     <%= yield :home_sidebar %>
     <%= yield :dashboard_sidebar %>
 
-    <%= yield :content %>
-
-
-  <div id="<%=controller_name%>-<%=action_name%>" class="col-xs-12 col-sm-8 col-md-9">
+  <div id="<%=controller_name%>-<%=action_name%>" class="yield-container col-xs-12 col-sm-8 col-md-9">
 
     <% flash.each do |message_type, message| %> <!-- Adding the contents of the flash variable to the site layout  -->
         <div class="alert alert-<%= message_type %>"><%= message %></div>

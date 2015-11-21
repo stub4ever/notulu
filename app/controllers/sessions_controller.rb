@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
         #Take into account of any object > if true > the user with given information will acess
         log_in user
         params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-        redirect_to user  #Converts this to the route for the user's profile page:
+        redirect_back_or user  #Converts this to the route for the user's profile page:
     else
       flash.now[:danger] = 'Invalid email/password combination' #An error message
       render 'new' #retry login
