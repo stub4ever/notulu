@@ -22,7 +22,9 @@
 
 <% end %>
 
+
 <div id="wrap_discover">
+  <%= will_paginate %>
   <h1>All users</h1>
 </div>
 
@@ -36,7 +38,10 @@
             <%= link_to user.name, user %>
           </li>
       <% end %>
+      <%= will_paginate %>
+
     </ul>
     </div>
   </div>
 </div>
+
