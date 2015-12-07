@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   delete 'logout'   => 'sessions#destroy' #Delete a session (log out)
 
   resources :users # add working /users/1 URL + work together with all the action needed for a s RESTful Users resource with large number of named routes
-
+  resources :account_activations, only: [:edit] #Resource for account activations
 end
