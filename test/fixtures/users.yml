@@ -11,3 +11,20 @@ an:
   name: An Bui
   email: an@example.gov
   password_digest: <%= User.digest('password') %>
+
+lana:
+  name: Lana Kane
+  email: hands@example.gov
+  password_digest: <%= User.digest('password') %>
+
+mallory:
+  name: Mallory Archer
+  email: boss@example.gov
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %> # Add 30 Extra Users slots
+  user_<%= n %>:
+    name:  <%= "User #{n}" %>
+    email: <%= "user-#{n}@example.com" %>
+	password_digest: <%= User.digest('password') %>
+<% end %>
