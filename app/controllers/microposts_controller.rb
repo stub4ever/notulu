@@ -7,7 +7,7 @@ class MicropostsController < ApplicationController
       flash[:success] = "Micropost created!"
       redirect_to current_user
     else
-      render 'users/create'
+      render 'microposts/write'
     end
   end
 
