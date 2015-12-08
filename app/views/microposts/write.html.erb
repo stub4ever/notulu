@@ -1,4 +1,4 @@
-<% provide(:title, 'All users') %>
+<%= provide(:title, "Write") %>
 
 <%= content_for :dashboard_sidebar do %>
 
@@ -22,31 +22,19 @@
 
 <% end %>
 
+<% if logged_in? %>
+    <div id="content" class="col-xs-12 col-sm-12 col-md-12">
 
-<div id="wrap_discover">
-  <%= will_paginate %>
-  <h1>All users</h1>
-</div>
-
-<div id="form_setting">
-  <div class="row">
-    <div class="form_setting col-md-8">
-    <ul class="users">
-      <% @users.each do |user| %>
-          <li>
-            <%= gravatar_for user, size: 50 %>
-            <%= link_to user.name, user %>
-            <% if current_user.admin? && !current_user?(user) %>
-                | <%= link_to "delete", user, method: :delete,
-                              data: { confirm: "You sure?" } %>
-            <% end %>
-
-          </li>
-      <% end %>
-      <%= will_paginate %>
-
-    </ul>
+    <div class="post">
+        <section class="user_info">
+          <%= render 'shared/user_info' %>
+        </section>
+        <section class="micropost_form">
+          <%= render 'shared/micropost_form' %>
+        </section>
+      </div>
     </div>
-  </div>
-</div>
+<% else %>
+<% end %>
+
 

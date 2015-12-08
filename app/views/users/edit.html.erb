@@ -10,7 +10,7 @@
               <li><%= link_to "Discover", users_path %></li>
               <li><%= link_to "My Profile", current_user %></li>
               <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-              <li><%= link_to "Write", signup_path, class:'button button_highlight' %></li>
+              <li><%= link_to "Write", write_path, class:'button button_highlight' %></li>
               <li><%= link_to "Log out", logout_path, method: "delete", id:"signin" %></li>
           <% else %>
               <li><%= link_to "Log in", login_path %></li>
@@ -24,7 +24,9 @@
 
         <div id="wrap_setting">
             <h1>Update your profile</h1>
-          <%= render 'shared/error_messages' %>
+          <%= form_for(@user) do |e| %>
+              <%= render 'shared/error_messages', object: e.object %>
+          <% end %>
         </div>
 
 
