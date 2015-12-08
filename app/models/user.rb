@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token
 
   before_save :downcase_email                                   # Sets the user's email address to a lowercase version

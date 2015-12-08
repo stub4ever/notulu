@@ -33,13 +33,12 @@
         </aside>
 
     <div id="content" class="col-xs-12 col-sm-12 col-md-12">
-    <div class="post">
-        <p class="date">23 Sept. 2015</p>
-        <h1 id="post_title"><a href="post.html">cronut lumbersexualk</a></h1>
-        <p> Truffaut kogi craft beer kitsch. Organic artisan
-          freegan, wayfarerscraft beercraft eercraft...
-        </p>
-        <hr>
-      </div>
+      <% if @user.microposts.any? %>
+          <h3>Posts (<%= @user.microposts.count %>)</h3>
+
+            <%= render @microposts %>
+
+          <%= will_paginate @microposts %>
+      <% end %>
     </div>
 

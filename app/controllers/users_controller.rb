@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id]) # retrieve the user id > allow to request to the Users controller > params[:id] will be user id 1 < works the same as User.find(1)
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def destroy

@@ -56,8 +56,12 @@ aside{
   text-align: center;
   .post {
     padding-top: 5%;
+    .user{
+      margin-left: 10px;
+    }
     .date{
-      font-size: 2rem;
+      margin-top: 15px;
+      font-size: 1rem;
       color: $grey;
     }
     h1 a {
@@ -71,7 +75,7 @@ aside{
       }
     }
     p {
-      font-size: 3rem;
+      font-size: 2.25rem;
       width: 60%;
       margin: 0% 20%;
     }
@@ -123,7 +127,7 @@ aside{
 
 .users {
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 10px;
   li {
     overflow: auto;
     padding: 10px 0;

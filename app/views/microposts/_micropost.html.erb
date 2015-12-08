@@ -1,0 +1,9 @@
+<hr>
+<div class="post">
+      <p><%= micropost.content %></p>
+      <p class="date"><%= link_to micropost.user.name, micropost.user %> <br/> <%= time_ago_in_words(micropost.created_at) %> ago. </p>
+</div>
+<hr>
+
+
+
