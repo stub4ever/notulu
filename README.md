@@ -13,28 +13,16 @@
 	
 	What features do we want?
 
-	    - Posts
+        - Admin
+            Destroy User
+
+	    - Users
 	        Create / Edit / Destroy
-	        Markdown
-	        Syntax highlighting
-	        Comments (Disqus)
-	        upload images
-	        show page
-	        html & css editor
-	        Syntax display at editor
-	        Show html & css display
-	       
+	        show Users 
 
-	    - Register
-	        Register form
-	        unique ID
-
-	    - Log in 
-	        Login form
-
-	    - User (Devise)
-
-
+	    - Microposts
+        	Show content
+            upload images
 
 
 
