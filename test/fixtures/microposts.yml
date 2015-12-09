@@ -19,6 +19,7 @@ most_recent:
   created_at: <%= Time.zone.now %>
   user: quoc
 
+
 <% 30.times do |n| %>
 micropost_<%= n %>:
   content: <%= Faker::Lorem.sentence(5) %>
